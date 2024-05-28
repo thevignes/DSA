@@ -123,7 +123,7 @@ newLinkedList.toLinkedList([1, 2, 3 ,4,4 ])
 
 newLinkedList.removeDuplicate()
 newLinkedList.print()
-newLinkedList.cir()
+newLinkedList.LinkedListToCircular()
 newLinkedList.isCircular()
 
 //double linked list 
