@@ -1,12 +1,14 @@
 function isPalindrome(str) {
-    let size = str.length;
-    for (let i = 0; i < size / 2; i++) {
-      if (str[i] !== str[size - 1 - i]) {
-        return "not a palindrome";
-      }
+  let start = 0;
+  let end = str.length - 1;
+  while (start < end) {
+    if (str[start] !== str[end]) {
+      return "not a palindrome";
     }
-    return "is a palindrome";
+    start++;
+    end--;
   }
-  
-  console.log(isPalindrome("mom"));  
+  return "is a palindrome";
+}
 
+console.log(isPalindrome("mom"));

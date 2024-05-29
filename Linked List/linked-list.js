@@ -73,6 +73,23 @@ class LinkedList {
         current.next = current.next.next
 
     };
+    deleteNode(value) {
+        if (!this.head) {
+            return;
+        }
+
+        if (this.head.data === value) {
+            this.head = this.head.next;
+            return;
+        }
+
+        let current = this.head;
+        while (current.next && current.next.data !== value) {
+            current = current.next;
+        }
+
+            current.next = current.next.next;
+    }
     middlevalue ( ) {
         let fast = this.head;
         let slow = this.head;

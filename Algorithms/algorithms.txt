@@ -1,0 +1,24 @@
+
+///////////////////////////////////////Floyd's Cycle-Finding algorithm ////////////////////////////////////
+
+Floyd's Cycle-Finding algorithm, also known as the Tortoise and Hare algorithm, is a pointer algorithm used
+to detect cycles in linked lists or arrays. The algorithm involves two pointers, a tortoise, and a hare, 
+traversing the data structure. The tortoise pointer moves one step at a time, while the hare pointer moves
+twice as fast as the tortoise pointer. If a cycle exists, the hare pointer will eventually catch up to the
+tortoise pointer at a certain point, known as the intersection point of the cycle
+
+
+Presence of the Cycle : (also find the linked list is cirlcular or not)
+- Two pointers, slow and fast, start at the head of the linked list.
+- The slow pointer moves one step at a time, while the fast pointer moves two steps at a time.
+- If the pointers meet at any point before reaching null, a cycle is detected.
+
+Midlle of linked list : 
+
+- two pointers, slow and fast , start head of linked list
+- If the fast pointer or fast.next is null, it means the fast pointer has reached the end of the list. In
+  this case, the slow pointer will be at the middle node of the list
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
