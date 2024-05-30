@@ -13,3 +13,4 @@ const replaceNth = (str, n) => {
   return res;
 };
 console.log(replaceNth(str, n));
+
