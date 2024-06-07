@@ -4,13 +4,7 @@ function mergesort(arr) {
   if (arr.length <= 1) return arr;
   let middle = Math.floor(arr.length / 2);
   let left = mergesort(arr.slice(0, middle));
-  console.log(`${left}
-  ----------
-  `)
   let right = mergesort(arr.slice(middle));
-  console.log(`${right}
-  ***********
-  `)
   return merge(left, right);
 }
 
