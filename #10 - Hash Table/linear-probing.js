@@ -25,5 +25,5 @@ class HashTable {
 
 const table = new HashTable(10);
 table.set("name","sahal");
-table.set("mane","akhil");
+table.set("mane","messi");
 console.log(table)
