@@ -46,12 +46,6 @@ class Trie {
     return true;
   };
 
-  printall (word) {
-    let rootnode = this.root;
-    for ( let char in rootnode.children ) {
-
-    }
-  }
   autocomplete(word) {
     let curr = this.root;
     for (let i = 0; i < word.length; i++) {
