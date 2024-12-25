@@ -9,7 +9,7 @@ function selectionsort(arr) {
         min = j;
       }
     }
-    if (i !== min) {
+    if (i !=min) {
       [arr[i], arr[min]] = [arr[min], arr[i]];
     }
   }
